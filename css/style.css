@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.body{
+    background: rgba(0, 0, 0, 1);
+    /* color: rgba(255, 255, 255, 0.8); */
+    transition: .7s;
+    scroll-behavior: smooth;
+}
+.light_mode{
+    background: rgba(255, 255, 255, 1);
+    /* color: rgba(0, 0, 0, 1); */
+    transition: .7s;
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 1000px) {
+    
+    #header,
+    .light_mode #header{
+        width: 100%;
+        height: 100px;
+        /* background: rgba(0, 0, 0, .5); */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        z-index: 99;
+        justify-content: space-between;
+        padding: 0px 60px;
+        /* box-shadow: 0px 2px 10px rgba(255,255, 255, 0.2); */
+    }
+    .light_mode #header{
+        /* background: rgba(255, 255, 255, 1); */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+    }
+    div#burian div.sticky{
+        background: rgba(255, 0, 0, 1);
+        height: 50px;
+        transition: .5s;
+    }
+    .light_mode div#burian div.sticky{
+        background: rgba(3, 100, 255, 1);
+        height: 50px;
+        transition: .5s;
+    }
+    .light_mode div#burian div.sticky .logo h2,
+    .light_mode div#burian div.sticky .nav ul li a{
+        color: white;
+    }
+    #header .logo{
+        display: flex;
+        align-items: center;
+    }
+    #header .logo img{
+        width: 120px;
+    }
+    #burian .sticky .logo img{
+        width: 50px;
+    }
+    #header .logo h2,
+    #header .logo h2 .last{
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+    #header .logo h2 span.last{
+        color: crimson;
+    }
+    #burian .sticky .logo h2 span.last{
+        color: #fff;
+    }
+    .light_mode #header .logo h2{
+        color: #000;
+    }
+    #burian .sticky .logo h2,
+    #burian .sticky .logo h2 .last{
+        font-size: 15px;
+    }
+    #header .logo h2 span,
+    #header .logo h2 .last span{
+        font-size: 35px;
+    }
+    #burian .sticky .logo h2 span{
+        font-size: 25px;
+    }
+    #header .nav ul li,
+    .light_mode #header .nav ul li{
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 20px;
+        text-align: center;
+        transition: .5s;
+        letter-spacing: 2px;
+        font-size: 20px;
+        border-bottom: 1px solid green;
+    }
+    #burian .sticky .nav ul li{
+        display: inline-block;
+        width: 75px;
+        height: 30px;
+        margin-right: 10px;
+        line-height: 30px;
+        margin-top: 10px;
+        text-align: center;
+        transition: .5s;
+        letter-spacing: 1px;
+        font-size: 15px;
+        border-bottom: 1px solid green;
+    }
+    #header .nav ul li:hover{
+        background: green;
+        border: none;
+        border-radius: 5px;
+    }
+    .light_mode #header .nav ul li{
+        border: none;
+    }
+    .light_mode #header .nav ul li:hover{
+        background: rgba(0, 0, 255, 1);
+        border: none;
+        border-radius: 5px;
+        text-shadow: none;
+        color: #fff;
+    }
+    .light_mode #burian .sticky .nav ul li:hover{
+        background: rgba(255, 0, 0, .8);
+        color: #000;
+    }
+    .light_mode #header .nav ul li a:hover{
+        color: #fff;
+    }
+    #burian .sticky .nav ul li:hover{
+        text-shadow: none;
+    }
+    #header .nav ul li a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .light_mode #header .nav ul li a,
+    .light_mode #header .mode i{
+        color: #000;
+    }
+    /* css bar style */
+    #header .bar{
+        color: #fff;
+        font-size: 25px;
+        display: none;
+    }
+    /* css mode style */
+    #header .mode .sun{
+        color: #fff;
+        font-size: 25px;
+    }
+    #header .mode i.moon,
+    #header .moon_mode i.sun,
+    #header .sun_mode i.moon{
+        display: none;
+    }
+    #header .moon_mode i.moon,
+    #header .sun_mode i.sun{
+        display: block;
+        font-size: 25px;
+    }
+    
+
+    /* css main */
+    #main section#home,
+    #main section#about,
+    #main section#skill,
+    #main section#portfolio,
+    #main section#contact{
+        padding: 60px;
+        text-align: justify;
+    }
+
+    /* #main #home dark mode  */
+    #main section#home{
+        display: flex;
+        width: 100%;
+        background:rgba(255, 255, 255, .2);
+        padding-bottom: 0px;
+    }
+    #main #home .nama{
+        width: 50%;
+        padding-top: 150px;
+        border-right: 1px solid crimson;
+        border-bottom-right-radius: 80%;
+        color: #fff;
+    }
+    #main #home .foto{
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        background: url(../img/Me01rbg.png);
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+    #main #home .nama .text-1{
+        font-size:20px ;
+    }
+    #main #home .nama .text-2{
+        font-size:50px ;
+    }
+    #main #home .nama .text-3{
+        font-size:25px ;
+        display: flex;
+    }
+    #main #home .nama .text-3 span{
+        color: crimson;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        box-shadow: 7px 0px 0px #fff;
+        animation: textTyping 5s steps(13) infinite;
+    }
+    @keyframes textTyping {
+        0%,90%,100%{
+            width: 1px;
+        }
+        30%,
+        60%{
+            width: 176.06px;
+        }
+    }
+    #main #home .foto{
+        width: 50%;
+        height: 100%;
+    }
+    #main #home .foto img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: none;
+        border-radius: 30px;
+        
+    }
+    /* #main #home light mode  */
+    .light_mode #burian #main #home{
+        background: rgba(255, 255, 255, .1);
+    }
+    .light_mode #main #home .nama{
+        color: #000;
+    }
+
+
+    /* css #main #about dark mode */
+    #main #about{
+        width: 100%;
+        background: #3b5d5c;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+    #about .about{
+        width: 30%;
+        text-align: center;
+    }
+    #about .about img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    #about .about a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-right: 10px;
+        background: rgba(255,255, 255, .6);
+        border: 1px solid #fff;
+        font-size: 25px;
+    }
+    #about .about a:first-child:hover{
+        background: rgba(0, 0, 255, .8);
+        color: #fff;
+    }
+    #about .about a:last-child{
+        color: #f00;
+    }
+    #about .about a:last-child:hover{
+        background: rgba(255, 0, 0, .8);
+        color: #fff;
+    }
+    #about .about_text{
+        width: 50%;
+        text-align: justify;
+    }
+    #about .about_text p{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    #about .about_text .btn_cv a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* css #main #about light mode */
+    .light_mode #burian #main section#about{
+        background: #aaa;
+        color: #000;
+    }
+    .light_mode #about .about_text .btn_cv a{
+        color: #000;
+    }
+    .light_mode #about .about_text .btn_cv a:hover{
+        color: #fff;
+    }
+
+    /* css #main #skill dark mode */
+    #main #skill{
+        background: rgba(255, 255, 255, .2);
+        min-height: 400px;
+    }
+    #main #skill h1{
+        color: #fff;
+        text-align: center;
+    }
+
+
+    /* css #main #skill light mode */
+    .light_mode #main #skill h1{
+        color: #000;
+        text-align: center;
+    }
+
+    /* css #portfolio dark mode */
+    #main #portfolio{
+        background:#3b5d5c ;
+    }
+    #portfolio .head_portfolio{
+        text-align: center;
+        padding: 10px;
+    }
+    #portfolio .head_portfolio h1,
+    #portfolio .head_portfolio hr{
+        color: #fff;
+    }
+    #portfolio .portfolio{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    #portfolio .portfolio .card{
+        width: 300px;
+        background: rgba(255, 255, 255, .7);
+    }
+    #portfolio .portfolio .card img{
+        height: 180px;
+    }
+    /* akhir css #portfolio  */
+
+    /* css #portfolio light mode */
+    .light_mode #burian #main section#portfolio{
+        background: #aaa;
+        color: #000;
+    }
+    .light_mode #burian #main #portfolio .head_portfolio h1,
+    .light_mode #burian #main #portfolio .head_portfolio hr{
+        color: #000;
+    }
+    .light_mode #burian #main #portfolio .portfolio .card{
+        background: rgba(255, 255, 255, .5);
+    }
+    /* akhir css #portfolio light mode */
+
+    /* css #kontak dark mode */
+    #main #contact{
+        background: rgba(255, 255, 255, .2);
+    }
+    #main #contact .head_contact h1,
+    #main #contact .head_contact hr{
+        color: #fff;
+    }
+    #main #contact .contact{
+        display: flex;
+    }
+    #main #contact .contact form,
+    #main #contact .contact .pesan{
+        width: 50%;
+        color: #fff;
+    }
+    #main #contact .contact .pesan{
+        padding: 50px;
+    }
+    /* akhir css #kontak */
+
+    /* css #kontak light mode */
+    .light_mode #burian #main #contact .head_contact h1,
+    .light_mode #burian #main #contact .head_contact hr{
+        color: #000;
+    }
+    .light_mode #burian #main #contact .contact form,
+    .light_mode #burian #main #contact .contact .pesan{
+        color: #000;
+    }
+    /* akhir css #kontak light mode */
+}
+
+
+/* 
+---------------------------------------------
+css phone display 
+---------------------------------------------
+*/
+@media  screen and (max-width : 999.5px ) {
+    /* css header dark mode */
+    #header{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 50px;
+        display: flex;
+        justify-content: space-between;
+        background: rgba(255, 0, 0, 1);
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 99;
+    }
+    #header .logo{
+        display: flex;
+        align-items: center;
+    }
+    #header .logo img{
+        width: 60px;
+        height: 50px;
+    }
+    #header .logo h2,
+    #header .logo h2 .last{
+        font-size: 20px;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, .8);
+    }
+    #header .logo h2 span,
+    #header .logo h2 .last span{
+        font-size: 30px;
+    }
+    #header .nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background: #4a4a4a;
+        transition: .5s ease;
+    }
+    #header .bar{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    #header .bar i{
+        font-size: 20px;
+    }
+    #header .bar i:last-child{
+        display: none;
+    }
+    #header .mode{
+        position: absolute;
+        display: none;
+    }
+
+    /* bars click */
+    #header .cross{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0%;
+        background: #4a4a4a;
+        transition: .5s ease;
+    }
+    #header .cross ul{
+        width: 100%;
+        list-style-type: none;
+        padding: 0px;
+        padding-top: 50px;
+    }
+    #header .cross ul li{
+        text-align: center;
+        width: 100%;
+        letter-spacing: 2px;
+        font-size: 18px;
+        transition: .5s;
+    }
+    #header .cross ul li:hover{
+        background: rgba(255, 255, 255, .8);
+        color: #000;
+    }
+    #header .cross ul li:hover a{
+        color: #000;
+    }
+    #header .cross ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #burian .bar i.active{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        z-index: 99;
+        position: absolute;
+        color: #fff;
+        font-size: 25px;
+        right: 50px;
+    }
+    #burian .bar i.deactive{
+        display: none;
+    }
+
+    /* #main section */
+    #main section#home,
+    #main section#about,
+    #main section#work,
+    #main section#skill,
+    #main section#portfolio,
+    #main section#contact{
+        padding: 60px;
+        text-align: justify;
+    }
+    /* #main section home styling */
+    #main section#home{
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/Me011rbg1.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        letter-spacing: 2px;
+        padding-bottom: 0px;
+    }
+    #main #home .nama{
+        background: rgba(255, 255, 255, .2);
+        padding: 15px;
+    }
+    #main #home .nama .text-1,
+    #main #home .nama .text-2,
+    #main #home .nama .text-3{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    #main #home .nama .text-3 span{
+        color: red;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        font-size: 30px;
+        text-decoration: underline;
+        box-shadow: 7px 0px 0px #fff;
+        animation: textTyping 5s steps(13) infinite;
+    }
+    @keyframes textTyping {
+        0%,90%,100%{
+            width: 1px;
+        }
+        30%,
+        60%{
+            width: 245.06px;
+        }
+    }
+    #main #home a.hub{
+        position: relative;
+        bottom: 0px;
+        color: white;
+    }
+    #main #home .foto{
+        display: none;
+    }
+
+    /* #main #about css */
+    #main #about{
+        background: rgba(255, 255, 255, .3);
+    }
+    #main #about .about{
+        text-align: center;
+    }
+    #main #about .about img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 2px solid #fff;
+    }
+    #main #about .about a{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-right: 10px;
+        background: rgba(255,255, 255, .6);
+        border: 1px solid #fff;
+        font-size: 25px;
+    }
+    #main #about .about a:first-child:hover{
+        background: rgba(0, 0, 255, .8);
+        color: #fff;
+    }
+    #main #about .about a:last-child{
+        color: #f00;
+    }
+    #main #about .about a:last-child:hover{
+        background: rgba(255, 0, 0, .8);
+        color: #fff;
+    }
+    #main #about .about_text{
+        padding-top: 10px;
+        color: #fff;
+    }
+    #main #about .about_text p span{
+        font-size: 25px;
+        color: crimson;
+        margin-left: 15px;
+        text-decoration: underline;
+    }
+
+
+    /* section portfolio  */
+    #main #portfolio .head_portfolio h1,
+    #main #portfolio .head_portfolio hr{
+        color: #fff;
+        text-align: center;
+    }
+
+    #main #portfolio .portfolio{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #main #portfolio .portfolio .card{
+        width: 250px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    /* akhir section portfolio  */
+
+    /* section contact */
+    #main #contact .pesan,
+    #main #contact .head_contact h1, hr{
+        color: #fff;
+    }
+
+    /* akhir section contact */
+}

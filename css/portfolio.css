@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width : 950px){
+        #portfolio #head .card{
+        background: rgb(0,0,254, 0.8);
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #portfolio #head img{
+        width: 200px;
+        height: 150px;
+        position: relative;
+        margin:25px 30px;
+        border: 2px solid grey;
+        border-radius: 50%;
+    }
+    #portfolio #head .name{
+        color: #fff;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        margin: 50px;
+        letter-spacing: 2px;
+    }
+    #portfolio #head .name h2{
+        font-size: 50px;
+    }
+    #portfolio #head .name span{
+        text-shadow: 3px 2px 5px white;
+    }
+    #portfolio #content{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #portfolio #content .about{
+        background: #e4ecf7;
+        width: 30%;
+    }
+    #portfolio #content .about .area{
+        background:rgb(0,192,255, 0.1) ;
+        padding: 10px;
+    }
+    #portfolio #content .head{
+        width: 100%;
+        background: #0a75c7;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+    }
+    #portfolio #content .head h2{
+        font-size: 20px;
+    }
+    #portfolio #content .about ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    #portfolio #content .about i{
+        margin-right: 15px;
+    }
+    #portfolio #content .about .kontak li a{
+        color: #000;
+        text-decoration: none;
+    }
+    .skill span{
+        font-size: 13px;
+    }
+    .skill .bar{
+        width: 100%;
+        display: flex;
+        position: relative;
+        border: 1px solid #40ff01;
+        border-radius: 4px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .ps .bar .lv,
+    .html .bar .lv,
+    .css .bar .lv,
+    .php .bar .lv,
+    .js .bar .lv{
+        height: 17px;
+        background: #01ff00;
+        border: none;
+        border-radius: 4px;
+    }
+    .ps .bar .lv{
+        width: 30%;
+    }
+    .html .bar .lv{
+        width: 70%;
+    }
+    .css .bar .lv,
+    .php .bar .lv{
+        width: 50%;
+    }
+    .js .bar .lv{
+        width: 25%;
+    }
+    .skill .bar span{
+        font-size: 13px;
+        position: absolute;
+        right: 5px;
+    }
+    #portfolio #content .general{
+        background: rgb(0,255,255, 0.3);
+        width: 70%;
+    }
+    #portfolio #content .general .profil{
+        height: 200px;
+    }
+    #portfolio #content .general .pendidikan table th,
+    #portfolio #content .general .pengalaman table th{
+        width: 150px;
+    }
+}
+@media screen and (max-width : 950.5px){
+    body{
+        background: lightcyan;
+    }
+    #head{
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgb(138, 138, 161), blue 45%, white 45%, #eee);
+    }
+    #head .card{
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        padding-top: 40px;
+        background: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 10px 15px 15px rgba(0,0, 0, 0.1);
+        border-radius: 10px;
+    }
+    #head .card img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid brown;
+    }
+    #content .head{
+        width: 100%;
+        text-align: center;
+        background: blue;
+        color: #fff;
+        border-radius: 5px;
+    }
+    #content .head h2{
+        font-size: 20px;
+    }
+    #portfolio #content .about .kontak li a{
+        color: #000;
+        text-decoration: none;
+    }
+    #content .about .kontak ul,
+    #content .about .hobby ul{
+        list-style-type: none;
+        padding: 0px;
+    }
+    .skills .skill {
+        background: rgb(0,192,255, 0.1);
+        padding: 0px 5px;
+    }
+    .skill span{
+        font-size: 13px;
+    }
+    .skill .bar{
+        width: 100%;
+        display: flex;
+        position: relative;
+        border: 1px solid #40ff01;
+        border-radius: 4px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .ps .bar .lv,
+    .html .bar .lv,
+    .css .bar .lv,
+    .php .bar .lv,
+    .js .bar .lv{
+        height: 17px;
+        background: #01ff00;
+        border: none;
+        border-radius: 4px;
+    }
+    .ps .bar .lv{
+        width: 30%;
+    }
+    .html .bar .lv{
+        width: 70%;
+    }
+    .css .bar .lv,
+    .php .bar .lv{
+        width: 50%;
+    }
+    .js .bar .lv{
+        width: 25%;
+    }
+    .skill .bar span{
+        font-size: 13px;
+        position: absolute;
+        right: 5px;
+    }
+    #portfolio #content .general .profil{
+        height: 200px;
+    }
+    #portfolio #content .general .pengalaman{
+        margin-bottom: 25px;
+    }
+    #portfolio #content .general .pendidikan table th,
+    #portfolio #content .general .pengalaman table th{
+        width: 150px;
+    }
+
+}
